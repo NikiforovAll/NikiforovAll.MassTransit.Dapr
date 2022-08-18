@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RootNamespace>MassTransit</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>MassTransit.PubSub</PackageId>
+    <Title>MassTransit.PubSub</Title>
+    <PackageTags>MassTransit;PubSub</PackageTags>
+    <Description>MassTransit PubSub Support; $(Description)</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+    <!--<ProjectReference Include="..\..\..\..\..\..\mnt\d\dev\MassTransit\src\MassTransit\MassTransit.csproj" />-->
+    <PackageReference Include="MassTransit" Version="[8.0.6,9.0)" />
+    <PackageReference Include="CloudNative.CloudEvents.SystemTextJson" Version="[2.3.1,3)" />
+  </ItemGroup>
+</Project>

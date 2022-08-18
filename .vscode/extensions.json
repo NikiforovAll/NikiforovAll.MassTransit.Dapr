@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+      "cweijan.vscode-redis-client",
+      "ms-azuretools.vscode-dapr"
+    ]
+}

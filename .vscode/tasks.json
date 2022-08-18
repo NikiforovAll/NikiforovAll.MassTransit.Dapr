@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/NikiforovAll.MassTransit.Dapr.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "appId": "worker",
+            "appPort": 5000,
+            "label": "dapr-debug",
+            "type": "dapr",
+            "dependsOn": "build",
+            "componentsPath": "./components",
+            "config": "./components/config.yaml",
+            "httpPort": 3600,
+            "grpcPort": 50001
+        },
+        {
+            "appId": "worker",
+            "label": "daprd-down",
+            "type": "daprd-down"
+        }
+    ]
+}

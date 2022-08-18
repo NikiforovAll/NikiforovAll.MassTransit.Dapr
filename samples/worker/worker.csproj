@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapr.AspNetCore" Version="1.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MassTransit.Dapr.PubSub\MassTransit.Dapr.PubSub.csproj" />
+    <ProjectReference Include="..\..\src\RideOn.Components\RideOn.Components.csproj" />
+    <!--<ProjectReference Include="..\..\..\..\..\..\mnt\d\dev\MassTransit\src\Transports\MassTransit.RabbitMQTransport\MassTransit.RabbitMQTransport.csproj" />-->
+    <PackageReference Include="MassTransit.RabbitMQ" Version="[8.0.6,9.0)" />
+  </ItemGroup>
+
+</Project>

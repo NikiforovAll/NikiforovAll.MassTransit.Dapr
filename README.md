@@ -1,5 +1,8 @@
 # MassTransit + Dapr 🚧🏗👷‍♂️
 
+⚠ The initial solution is based on `EventHubRider` and a lot of code might be redundant
+⚠ Producer not implemented
+⚠ CloudEvent is not mapped entirely
 
 ## Backlog
 
